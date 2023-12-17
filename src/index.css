@@ -1,7 +1,44 @@
+/* Fade-in transition */
+.fade-in-card {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-zoom-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Fade-up transition  */
+section {
+    height: 100vh;
+}
+.fade_up {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 5s;
+}
+.fade_up.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
 .container {
     text-align: center;
     margin-top: 20%;
 }
+.card {
+    margin: 200px 0;
+}
+
+/* Button animation effect */
 .slide_in {
     font-size: 1.7em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
